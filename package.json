@@ -1,0 +1,27 @@
+{
+  "name": "warwicks",
+  "version": "1.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "esbuild": "^0.24.0",
+    "express": "^4.21.2",
+    "globby": "^14.0.2"
+  }
+}
